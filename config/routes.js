@@ -37,9 +37,13 @@ module.exports.routes = {
   }
 
   ,
-  'GET /oso/user':'PersonaController.todo',
+  'GET /oso/user': 'PersonaController.todo',
   'POST /api/persona': 'PersonaController.crear',
-  'GET /api/persona/:id': 'PersonaController.traer'
+  'GET /api/persona/:id': 'PersonaController.traer',
+
+  'POST /login': 'AuthController.login',
+  '/logout': 'AuthController.logout',
+  'POST /persona/avatar/:id': 'PersonaController.subir',
 
   /***************************************************************************
   *                                                                          *

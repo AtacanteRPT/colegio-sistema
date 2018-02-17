@@ -23,10 +23,21 @@ module.exports = {
       size: 100,
       defaultsTo: null
     },
+    identificacion:{
+      type:'string',
+      required:false,
+      size:100,
+      defaultsTo:null
+    },
     nombre: {
       type: 'string',
       required: true,
       size: 100
+    },
+    img: {
+      type: 'string',
+      required: false,
+      size: 150
     },
     paterno: {
       type: 'string',
@@ -50,13 +61,13 @@ module.exports = {
       size: 11,
       defaultsTo: null
     },
-     cedula: {
+    cedula: {
       type: 'integer',
       required: false,
       size: 11,
       defaultsTo: null
     },
-     expedido: {
+    expedido: {
       type: 'string',
       required: false,
       size: 11,

@@ -78,11 +78,13 @@ module.exports = {
                     break;
             }
 
+            var pass = generatePassword()
+            console.log("+++++++++++++++++++++++++:" + pass);
             usuario =
                 {
                     id: 0,
                     username: datoPersona.id + datoPersona.nombre,
-                    password: generatePassword(),
+                    password: pass,
                     codigo_qr: generatePassword(12, false, /\d/),
                     rol: rol,
                     idPersona: datoPersona.id
@@ -116,6 +118,40 @@ module.exports = {
 
         });
     }
+
+    ,
+    subir: function (req, res) {
+
+        var idPersona = req.param('id');
+        req.file('avatar').upload({
+            // ~10MB
+            dirname: require('path').resolve(sails.config.appPath, 'assets/avatars'),
+            maxBytes: 10000000
+        }, function whenDone(err, uploadedFiles) {
+
+            if (err) {
+                return res.negotiate(err);
+            }
+
+            // If no files were uploaded, respond with an error.
+            if (uploadedFiles.length === 0) {
+                return res.badRequest('No file was uploaded');
+            }
+
+            console.log(sails.config.appUrl)
+            var url= sails.getBaseUrl() +"/avatars/"+ (uploadedFiles[0].fd).substring(47);
+            Persona.update({ id: idPersona }, {
+                img: url,
+            }).exec(function (err,datoPersona) {
+
+                if (err) { console.log(err); return res.negotiate(err) };
+
+                return res.send(datoPersona[0]);
+            });
+
+        });
+
+    },
 
 };
 
