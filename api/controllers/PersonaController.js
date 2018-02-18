@@ -50,14 +50,11 @@ module.exports = {
             fechaNacimiento: req.param('fechaNacimiento'),
             cedula: req.param('cedula'),
             expedido: req.param('expedido'),
-            sexo: req.param('sexo')
+            sexo: req.param('sexo'),
+            rol:req.param('rol')
         }
 
-        console.log('persona : ' + nuevaPersona.email);
-
-        console.log('pass : ' + generatePassword());
-
-        var rol = req.param('rol');
+       var rol = req.param('rol');
         Persona.create(nuevaPersona).exec(function (err, datoPersona) {
             if (err) { return res.serverError(err) };
 
@@ -78,14 +75,12 @@ module.exports = {
                     break;
             }
 
-            var pass = generatePassword()
-            console.log("+++++++++++++++++++++++++:" + pass);
             usuario =
                 {
                     id: 0,
                     username: datoPersona.id + datoPersona.nombre,
-                    password: pass,
-                    codigo_qr: generatePassword(12, false, /\d/),
+                    password: datoPersona.id + datoPersona.nombre,
+                    codigo_qr: datoPersona.nombre+" "+datoPersona.paterno+" "+datoPersona.materno,
                     rol: rol,
                     idPersona: datoPersona.id
                 }

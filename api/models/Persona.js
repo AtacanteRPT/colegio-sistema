@@ -23,6 +23,7 @@ module.exports = {
       size: 100,
       defaultsTo: null
     },
+
     identificacion:{
       type:'string',
       required:false,
@@ -88,6 +89,11 @@ module.exports = {
       required: false,
       size: 20,
       defaultsTo: null
+    },
+     rol: {
+      type: 'string',
+      required: true,
+      size: 25
     }
 
   }

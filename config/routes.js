@@ -45,6 +45,9 @@ module.exports.routes = {
   '/logout': 'AuthController.logout',
   'POST /persona/avatar/:id': 'PersonaController.subir',
 
+  'POST /alumno/adicionar_tutor/': 'ALumnoController.adicionar_tutor',
+  'GET /alumno/tutores/:id': 'ALumnoController.alumno_tutor'
+
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *
