@@ -34,9 +34,8 @@ module.exports.routes = {
 
   '/': {
     view: 'homepage'
-  }
+  },
 
-  ,
   'GET /oso/user': 'PersonaController.todo',
   'POST /api/persona': 'PersonaController.crear',
   'GET /api/persona/:id': 'PersonaController.traer',

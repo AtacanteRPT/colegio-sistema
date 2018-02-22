@@ -6,7 +6,7 @@
  */
 
 module.exports = {
-  tableName: 'turno_paralelo_grado_grupo',
+  tableName: 'curso',
   autoCreatedAt: false,
   autoUpdatedAt: false,
   attributes: {

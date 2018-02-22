@@ -21,6 +21,7 @@
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
     "jsonwebtoken": "^8.1.1",
+    "node-hid": "^0.7.2",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
     "password-generator": "^2.2.0",
