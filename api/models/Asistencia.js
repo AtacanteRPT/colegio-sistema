@@ -10,13 +10,10 @@ module.exports = {
   autoCreatedAt: false,
   autoUpdatedAt: false,
   attributes: {
-    idDia: {
-      type: 'integer',
+    fecha: {
+      type: 'date',
       required: false,
-      index: true,
-      size: 11,
       defaultsTo: null,
-      model: 'dia'
     },
     estado: {
       type: 'string',
@@ -25,12 +22,12 @@ module.exports = {
       defaultsTo: null
     },
     hora_llegada: {
-      type: 'time',
+      type: 'datetime',
       required: false,
       defaultsTo: null
     },
     hora_salida: {
-      type: 'time',
+      type: 'datetime',
       required: false,
       defaultsTo: null
     },
@@ -50,5 +47,7 @@ module.exports = {
       defaultsTo: null,
       model: 'persona'
     }
+
   }
+
 };

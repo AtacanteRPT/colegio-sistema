@@ -21,6 +21,7 @@
     "grunt-sync": "0.5.2",
     "include-all": "^1.0.0",
     "jsonwebtoken": "^8.1.1",
+    "moment": "^2.20.1",
     "node-hid": "^0.7.2",
     "passport": "^0.4.0",
     "passport-local": "^1.0.0",
@@ -28,7 +29,8 @@
     "rc": "1.0.1",
     "sails": "~0.12.14",
     "sails-disk": "~0.10.9",
-    "sails-mysql": "^0.11.5"
+    "sails-mysql": "^0.11.5",
+    "serialport": "^6.0.5"
   },
   "scripts": {
     "debug": "node debug app.js",
