@@ -17,6 +17,12 @@ module.exports = {
       primaryKey: true,
       size: 11
     },
+    nombre: {
+      type: 'string',
+      required: false,
+      size: 50,
+      defaultsTo: null
+    },
     hora_ini: {
       type: 'time',
       required: false,
@@ -27,5 +33,7 @@ module.exports = {
       required: false,
       defaultsTo: null
     }
+
   }
+
 };

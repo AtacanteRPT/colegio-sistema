@@ -25,14 +25,8 @@ module.exports = {
       size: 11,
       defaultsTo: null,
       model: 'asignatura'
-    },
-    idPeriodo: {
-      type: 'integer',
-      required: false,
-      index: true,
-      size: 11,
-      defaultsTo: null,
-      model: 'periodo'
     }
+
   }
+
 };

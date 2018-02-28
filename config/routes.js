@@ -32,9 +32,9 @@ module.exports.routes = {
   *                                                                          *
   ***************************************************************************/
 
-  '/': {
-    view: 'homepage'
-  },
+  // '/': {
+  //   view: 'homepage'
+  // },
 
   'GET /oso/user': 'PersonaController.todo',
   'POST /api/persona': 'PersonaController.crear',

@@ -22,13 +22,15 @@ module.exports = {
       defaultsTo: null
     },
     hora_llegada: {
-      type: 'datetime',
+      type: 'string',
+      size: 50,
       required: false,
       defaultsTo: null
     },
     hora_salida: {
-      type: 'datetime',
+      type: 'string',
       required: false,
+      size: 50,
       defaultsTo: null
     },
     idGestionAcademica: {
