@@ -41,6 +41,7 @@ module.exports = {
 
         var nuevaPersona = {
             id: 0,
+            identificacion: req.param('identificacion'),
             nombre: req.param('nombre'),
             email: req.param('email'),
             paterno: req.param('paterno'),

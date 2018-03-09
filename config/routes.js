@@ -42,6 +42,8 @@ module.exports.routes = {
 
   'POST /login': 'AuthController.login',
   '/logout': 'AuthController.logout',
+
+  'GET /autentificacion':'AuthController.autentificacion',
   'POST /persona/avatar/:id': 'PersonaController.subir',
 
   'POST /alumno/adicionar_tutor/': 'ALumnoController.adicionar_tutor',

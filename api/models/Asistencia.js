@@ -7,8 +7,6 @@
 
 module.exports = {
   tableName: 'asistencia',
-  autoCreatedAt: false,
-  autoUpdatedAt: false,
   attributes: {
     fecha: {
       type: 'date',

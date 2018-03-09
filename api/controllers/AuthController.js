@@ -27,6 +27,14 @@ module.exports = {
     logout: function (req, res) {
         req.logout();
         res.redirect('/');
+    },
+    autentificacion:function(req, res){
+        var usuario={
+            usuario:req.user,
+            autentificacion:req.isAuthenticated()
+        }
+
+        res.send(usuario)
     }
 
 };
