@@ -54,7 +54,6 @@ module.exports = {
         //     res.send('NADA 2')
         // }); 
 
-
         // var csvFilePath = '../.././assets/cvs/administrativo.csv'
 
         // var nuevasPersonas = [];
@@ -65,12 +64,22 @@ module.exports = {
         // };
 
         // nuevasPersonas = csvjson.toObject(data, options);
+
+        // var contador = 1;
         // nuevasPersonas.forEach(function (persona) {
 
         //     persona.identificacion = persona.cedula
-        //     persona.rol = 'administrativo'
+
+        //     var codigoQr = persona.identificacion + '$2018@' + ' Unidad Educativa TCNL.RAFAEL PABON FAB'
+        //     var code = qr.image(codigoQr, { type: 'svg' });
+        //     var output = fs.createWriteStream(path.join(__dirname, '../.././assets/codigos/' + contador + '.svg'))
+        //     console.log("contador : " + contador)
+        //     contador++;
+        //     code.pipe(output);
 
         // }, this);
+
+        // res.send('nada')
 
     }
 

@@ -138,8 +138,8 @@ module.exports = {
 
             console.log(sails.config.appUrl)
 
-            // var direccionBase = "http://localhost:1337/"
-             var direccionBase = "http://192.241.152.146:1337"
+             var direccionBase = "http://localhost:1337"
+            // var direccionBase = "http://192.241.152.146:1337"
             var url= direccionBase +"/avatars//"+ (uploadedFiles[0].fd).substring(47);
             Persona.update({ id: idPersona }, {
                 img: url,

@@ -52,7 +52,7 @@ module.exports.connections = {
     host: 'localhost',
     user: 'root', //optional
     password: '', //optional
-    database: 'colegio-production-1' //optional
+    database: 'colegio-development-10' //optional
   },
 
   /***************************************************************************

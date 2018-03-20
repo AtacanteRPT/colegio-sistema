@@ -5,6 +5,7 @@ var moment = require('moment')
 var baseidentificacion = '0'
 var actualIdentificacion = '0'
 
+var async = require('async');
 var auxAlumno = {
   identificacion: 0,
   materno: 'materno',
@@ -32,6 +33,7 @@ console.log('Server Sockets: el puerto 1338');
 var port = new SerialPort('COM10', {
   baudRate: 57600
 });
+
 var horaActual = ''
 var maxHoraLlegada = 9;
 var minsLlegada = 0;
@@ -39,9 +41,10 @@ var minHoraSalida = 12;
 var minsSalida = 0;
 var hoy = new Date();
 
+var auxiliar = [1, 2]
 // sails.log('Estado SOCKET : ' + io);
 
-var ioHola = io.on('connection', function (socket) {
+io.on('connection', function (socket) {
 
   console.log('+*+*+*+*+*+*+*+*+*+*+*+*+***+**+')
   port.on('data', function (data) {
@@ -49,17 +52,28 @@ var ioHola = io.on('connection', function (socket) {
     var hoy = new Date()
     // console.log(data.toString())
     if (data.toString().length < 9) {
-
       baseidentificacion = data.toString();
-      console.log('baseindentificacion', + baseidentificacion);
-      var datoAsistencia = marcarAsistencia(baseidentificacion)
+      async.series([
+        marcarAsistencia,
+        sincrono
+      ], function (err, resultado) {
+        // Here, results is an array of the value from each function
+        console.log('results',resultado)
 
-      socket.on('message', function (datoCliente) {
+        sails.log('A')
+        console.log('baseindentificacion', + baseidentificacion);
+        var datoAsistencia = resultado[0]
+        sails.log('B')
+        // socket.on('message', function (datoCliente) {
 
-        console.log('socket juanito : ', datoCliente)
-      })
-      socket.emit('message', datoAsistencia);
-      console.log('auxALumno:' + datoAsistencia)
+        //   console.log('socket juanito : ', datoCliente)
+        // })
+        socket.emit('message', datoAsistencia);
+
+        // console.log('auxALumno:', datoAsistencia)
+
+      });
+
     }
 
   });
@@ -68,8 +82,12 @@ var ioHola = io.on('connection', function (socket) {
 
 var sw = 0;
 var idNube = 0;
+function sincrono(callback) {
+  sails.log('-------------------------------')
+  callback(null, 'six');
+}
 
-function marcarAsistencia() {
+function marcarAsistencia(callback) {
   var fecha = hoy.getFullYear() + '-' + (hoy.getMonth() + 1) + '-' + hoy.getDate()
   horaActual = moment().format('LTS')   //07:46:55.000Z
   // console.log("moment hora : ",moment().hour())
@@ -84,11 +102,11 @@ function marcarAsistencia() {
     if (actualIdentificacion == '0') { sw == 1 }
 
     actualIdentificacion = baseidentificacion;
-    console.log('paso 1', actualIdentificacion)
+    // console.log('paso 1', actualIdentificacion)
 
     Persona.findOne({ identificacion: baseidentificacion }).exec((err, datoPersona) => {
 
-      console.log('paso nueevo', baseidentificacion)
+      // console.log('paso nueevo', baseidentificacion)
       var query = "SELECT p.nombre as paralelo, t.nombre as turno, g.nombre as grupo, tmpCurso.nombre , tmpCurso.paterno ,tmpCurso.materno,tmpCurso.img, tmpCurso.id as idAlumno ,tmpCurso.idCurso, tmpCurso.idPersona from paralelo p, turno t, grupo g , (SELECT c.idParalelo, c.idTurno,c.idGrupo, tmpInscribe.nombre, tmpInscribe.img, tmpInscribe.paterno,tmpInscribe.materno, tmpInscribe.idPersona, tmpInscribe.id, tmpInscribe.idCurso from curso c , (SELECT i.idCurso, tmpAlumno.nombre, tmpAlumno.paterno,tmpAlumno.materno, tmpAlumno.img, tmpAlumno.id, tmpAlumno.idPersona from inscribe i , (select p.nombre , p.paterno, p.materno , p.img, p.id as idPersona, a.id from persona p, alumno a where p.identificacion = ? and p.id = a.idPersona) tmpAlumno where i.idAlumno = tmpAlumno.id) tmpInscribe where c.id = tmpInscribe.idCurso)tmpCurso WHERE p.id = tmpCurso.idParalelo and t.id = tmpCurso.idTurno and g.id = tmpCurso.idGrupo"
 
       Persona.query(query, [actualIdentificacion], function (err, consulta) {
@@ -111,7 +129,7 @@ function marcarAsistencia() {
         }
 
         Asistencia.findOne({ idPersona: resultado.idPersona, fecha: fecha }).exec((err, datoAsistencia) => {
-          console.log('fechaAsistencia', datoAsistencia)
+          // console.log('fechaAsistencia', datoAsistencia)
 
           if (datoAsistencia == null) {
             console.log('paso 2 creando nuevo')
@@ -164,8 +182,9 @@ function marcarAsistencia() {
               //     idNube = data.id;
               //     console.log('datos subidos a la nube', data)
               // });
-
+              callback(null, auxAlumno);
               console.log("nuevo", auxAlumno)
+              sails.log('A2')
               return auxAlumno;
 
             });
@@ -216,6 +235,8 @@ function marcarAsistencia() {
 
                 //     return res.send(auxAlumno);
                 // });
+                sails.log('A2')
+                callback(null, auxAlumno);
                 return auxAlumno;
               })
           }
@@ -234,12 +255,12 @@ function marcarAsistencia() {
               hora_salida: moment().format('LTS') + ' (momentanea)'
             }
 
+            sails.log('A2')
+            callback(null, auxAlumno);
             return auxAlumno;
           }
 
         })
-
-        console.log('consulta', resultado)
 
       });
 
@@ -250,6 +271,7 @@ function marcarAsistencia() {
     console.log('baseIdentificacion', baseidentificacion);
 
     console.log('repedito')
+    callback(null, auxAlumno);
     return auxAlumno;
   }
 
