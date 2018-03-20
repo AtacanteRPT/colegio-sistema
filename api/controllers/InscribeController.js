@@ -7,17 +7,41 @@
 
 module.exports = {
 
-    inscribir:function(req,res){
+    inscribir: function (req, res) {
+        console.log("entrando por lo menos ala consulta")
+        var id = req.param('id')
+        var idCurso = req.param('idCurso')
+        var idGestionAcademica = req.param('idGestionAcademica')
+        Alumno.findOne({ idPersona: id }).exec((err, datoPersona) => {
+            if (err) { return res.serverError(err); }
+
+            console.log("entrando en la consulta")
+            Inscribe.create({ idAlumno: datoPersona.id, idCurso: idCurso, idGestionAcademica: idGestionAcademica }).exec((err, datoInscribe) => {
+                res.send(datoInscribe)
+            })
+
+        })
+
+    },
+    eliminar_inscripcion: function (req, res) {
 
         var id = req.param('id')
         var idCurso = req.param('idCurso')
         var idGestionAcademica = req.param('idGestionAcademica')
-        Alumno.findOne({idPersona:id}).exec((err,datoPersona)=>{
-             if (err) { return res.serverError(err); }
 
-             Inscribe.create({idAlumno:datoPersona.id, idCurso: idCurso, idGestionAcademica:idGestionAcademica}).exec((err,datoInscribe))
-             res.send(datoInscribe)
-        })  
+        sails.log("entrando a la consulta")
+        Alumno.findOne({ idPersona: id }).exec((err, datoPersona) => {
+            if (err) { return res.serverError(err);}
+
+            Inscribe.destroy({ idAlumno: datoPersona.id, idCurso: idCurso, idGestionAcademica: idGestionAcademica }).exec((err, datoInscribe) => {
+
+                if (err) { return res.serverError(err); }
+
+                sails.log("devolviendo lo ultimo")
+                res.send(datoInscribe[0])
+            })
+
+        })
 
     }
 

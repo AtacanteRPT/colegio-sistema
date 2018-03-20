@@ -71,7 +71,9 @@ module.exports = {
                 case 'tutor':
                     Tutor.create({ id: 0, idPersona: datoPersona.id }).exec(function (err, creado) { if (err) { return res.serverError(err); } })
                     break;
-
+                case 'administrativo':
+                    Administrador.create({ id: 0, idPersona: datoPersona.id, cargo: req.param('cargo')}).exec(function (err, creado) { if (err) { return res.serverError(err); } })
+                    break;
                 default:
                     break;
             }

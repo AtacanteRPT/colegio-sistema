@@ -1,0 +1,27 @@
+﻿nro;titulo;nombre;paterno;materno;cedula;extencion;sexo;cargo
+1;Cnl.DAEN.;Victor Boris;Gomez;Mejia;3723384;Cbb;M;DIRECTOR GENERAL DE LA UEFAB
+2;Sof.1ro.DESA;Ruben Julio;Chura;Aruquipa;3496363;LP;M;DIRECTOR ADMINISTRATIVO
+3;Sof.2do.DESA;Ronald;Choque;Angulo;4825422;LP;M;DIRECTOR FINANCIERO
+4;Sgto.1ro.Tec.;Maria Eugenia;Yujra;Pinto;6052537;LP;F;ENC. DE LA SECCION  INFRAESTRUCTURA
+5;Sgto.1ro.Tec.;Rocio;Salvador;Cama;5607281;BN.;F;ENC. DE LA SECCION  CAJA
+6;Sgto.1ro.Tec.;Paola Marisol;Quispe;Flores;6074535;LP;F;ENC. DE LA SECCION INTELIGENCIA
+7;Sgto.1ro.Tec.;Miriam;Condori;Quispe;6192374;LP;F;ENC. DE LA SECCION ACTIVOS FIJOS
+8;Sgto.1ro.Tec.;Rocio;Tinta;Tarqui;6765545;LP;F;AYUDANTE GENERAL 
+9;Sgto.1ro.Tec.;Zulma Flori;Balboa;Balboa;6792142;LP;F;ENC. DE LA SECCION ALMACEN
+10;Sgto.1ro.Mus.;Vladimir;Troche;Aruquipa;4888053;LP;M;ENC. DE LA BANDA DE MUSICA
+11;Tec.III;Maria Julieta;Gonzales;Martines;4266994;LP;F;SECRETARIA GENERAL
+12;Tec.V;Silvia;Quispe;Mamani;9212893;LP;F;AUX DE OFICINA
+13;Adm.IV;Gerardo;Zamorano;Tapia;4295875;LP;M;PSICOLOGO 
+14;Lic.;Paola;Apaza;Quispe;3410316;LP;F;ENC. DE LA SECCION PRESUPUESTOS
+15;Lic.;Oscar;Cabrera;Segales;6054199;LP;M;ENC. DE LA SECCION CONTABILIDAD
+16;Lic.;Cintia;Melendrez;Alaro;9089884;LP;F;ENC. DE LA SECCION SISTEMAS
+17;Sra;Magdalena;Callisaya;Cruz;4962428;L.P.;F;SECRETARIA DE NIVEL SECUNDARIA
+18;Srta;Jovita;Quispe;Quispe;6045239;LP;F;AUX DE OFICINA
+19;Srta;Dora;Quispe;Huanca;5980051;LP;F;SECRETARIA DE NIVEL PRIMARIO
+20;Sra.;Mirna;Estrada;Bruno;4295534;LP;F;REGENTE
+21;Sr.;Wilmer;Unzueta;;4326153;L.P.;M;REGENTE
+22;Sra.;Ruth;Heredia;;5247846;CBBA.;F;REGENTE
+23;Sr.;Raul;Monasterios;;9961093;LP;M;REGENTE
+24;Sr;Leonardo;Quispe;Persona;2433138;LP;M;PORTERO
+25;Sr;Roberto;Yana;Maquera;4256912;LP;M;PORTERO
+26;Sr;Ascencio;Quispe;Perez;6867136;LP;M;PORTERO

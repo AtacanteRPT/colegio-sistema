@@ -18,7 +18,6 @@
  * `node app.js --silent --port=80 --prod`
  */
 
-
 // Ensure we're in the project directory, so cwd-relative paths work as expected
 // no matter where we actually lift from.
 // > Note: This is not required in order to lift, but it is a convenient default.
@@ -28,6 +27,7 @@ process.chdir(__dirname);
 var sails;
 try {
   sails = require('sails');
+
 } catch (e) {
   console.error('To run an app using `node app.js`, you usually need to have a version of `sails` installed in the same directory as your app.');
   console.error('To do that, run `npm install sails`');
@@ -52,9 +52,11 @@ try {
     console.error('To resolve this, run:');
     console.error('npm install rc --save');
     rc = function () { return {}; };
-  }
-}
 
+  }
+
+}
 
 // Start server
 sails.lift(rc('sails'));
+

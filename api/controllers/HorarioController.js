@@ -7,12 +7,27 @@
 
 module.exports = {
 
-    crearCurso: function (req, res) {
+    adicionarHorario: function (req, res) {
 
-        var idTurno = req.param('idTurno');
-        var idParalelo = req.param('idParalelo');
-        var idGrupo  = req.param(' idGrupo');
-        var idGrado = req.param('idGrado'); 
+        Profesor.findOne({ idPersona: req.param('idProfesor') }).exec((err, datoHorario) => {
+
+            if (err) { return res.serverError(err); }
+
+            var nuevoHorario = {
+                idCurso: req.param('idCurso'),
+                idDia: req.param('idDia'),
+                idProfesor: datoHorario.id,
+                idAsignatura: req.param('idAsignatura'),
+                idPeriodo: req.param('idPeriodo'),
+                idGestionAcademica: 1
+            }
+
+            Horario.create(nuevoHorario).exec((err, datoHorario) => {
+                if (err) { return res.serverError(err); }
+
+                res.send(datoHorario);
+            })
+        })
 
     }
 

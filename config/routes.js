@@ -43,11 +43,13 @@ module.exports.routes = {
   'POST /login': 'AuthController.login',
   '/logout': 'AuthController.logout',
 
-  'GET /autentificacion':'AuthController.autentificacion',
+  'GET /autentificacion': 'AuthController.autentificacion',
   'POST /persona/avatar/:id': 'PersonaController.subir',
 
   'POST /alumno/adicionar_tutor/': 'ALumnoController.adicionar_tutor',
-  'GET /alumno/tutores/:id': 'ALumnoController.alumno_tutor'
+  'GET /alumno/tutores/:id': 'ALumnoController.alumno_tutor',
+
+  // 'POST /inscribe/inscribir': 'InscribeController.inscribir',
 
   /***************************************************************************
   *                                                                          *

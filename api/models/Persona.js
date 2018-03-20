@@ -47,7 +47,7 @@ module.exports = {
     },
     materno: {
       type: 'string',
-      required: true,
+      required: false,
       size: 100
     },
     telefono: {
