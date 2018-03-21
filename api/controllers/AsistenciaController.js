@@ -52,13 +52,21 @@ io.on('connection', function (socket) {
     var hoy = new Date()
     // console.log(data.toString())
     if (data.toString().length < 9) {
-      baseidentificacion = data.toString();
+      var auxBase = data.toString();
+      for (var i = 0; i < 10; i++) {
+        if (auxBase.charAt(i) != '$') {
+            baseidentificacion = auxBase;
+            i= 20;
+        }
+
+      }
+
       async.series([
         marcarAsistencia,
         sincrono
       ], function (err, resultado) {
         // Here, results is an array of the value from each function
-        console.log('results',resultado)
+        console.log('results', resultado)
 
         sails.log('A')
         console.log('baseindentificacion', + baseidentificacion);
