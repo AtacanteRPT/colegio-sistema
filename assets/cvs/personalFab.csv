@@ -1,0 +1,74 @@
+﻿nro;nombre;paterno;materno;codigoFoto;cedula;expedido;rol;Titulo
+1;Monica Isabel ;Sanchez ;Jimenez;1744;12573179;LP;;
+2;Monica Galdys ;Jimenez ;Luza ;1743;;;;
+3;Ruben German ;Sanchez ;Andrade ;1724;;;;
+4;Freddy Osmar ;Tuco;Alcon;1650;;;;
+5;Maria Eugenia ;Alcon ;Tarqui;1651;;;;
+6;Mabel Rozana ;Alcon ;Tarqui;1652;;;;
+7;Ana Maria;Tuco;Alcon;1653;;;;
+8;Adriana Carol;Cruz;Calle;1654;9995087;LP;;
+9;Silvia;Rios ;Vaquero;1656;9869546;LP;;
+10;Rossana ;Salamanca;;;;;;
+11;Yoseth;Alvarez;Cuevas;1660;6002672;LP;;
+12;Jose;Alvarez;Cuevas;1661;6025021;LP;;
+13;Laura;Laime;Cuevas;1662;6808531;LP;;
+14;Vania;Ticona;Mollericona;1663;9210085;LP;;
+15;Mariela;Salguero;Mamani;1664;14155560;LP;;
+16;Brenda Vanesa;Flores;Flores;1665;;;;
+17;Teresa;Rodrigues;;1666;251842;LP;;
+18;Alejandra Carol;Calle;;1667;4366139;LP;;
+19;Dayana Iveth ;Flores;Flores;;;;;
+20;Lidia;Flores;Chavez;1675;4957975;LP;;
+21;Lydia Juana;Quisbert;Ugarte;1685;3398261;LP;profesor;DOCENTE
+22;Jenny Veronica;Quispe;Hidalgo;1686;4838980;LP;profesor;DOCENTE
+23;Maria Isabel;Argollo;Chambi;1687;2690134;LP;profesor;DOCENTE
+24;Olga Catalina;Condori;Gutierrez;1688;4269576;LP;profesor;DOCENTE
+25;Karla Tatiana;Tejada ;Camacho;1689;4815041;LP;profesor;DOCENTE
+26;Adriana del Rosario;Condarza;Munguia;1690;8315112;LP;profesor;DOCENTE
+27;Lidia Justina;Huayhua;Ari;1692;3465221;LP;profesor;
+28;Jhonny ;Alejo;Huanca;1696;6186025;LP;;
+29;Jovita;Quispe;Quispe;1694;6045239;LP;administrativo;SECRETARIA
+30;Jhenny;Coma;Aranda;1697;;;profesor;DOCENTE
+31;Maritza;Martinez;Tarqui;1700;4262240;LP;profesor;DOCENTE
+32;Gabriela Libertad;Gomez;Pozo;1702;8340355;LP;profesor;DOCENTE
+33;Rebeca Ninosca;Cruz;Apaza;1705;7046293;LP;profesor;DOCENTE
+34;Silvia;Zulema;Quispe;1710;9612893;LP;administrativo;SECRETARIA
+35;Nair Rosa;Ortiz;Portocarrero;1716;4893610;LP;profesor;DOCENTE
+36;Ninosca ;Condori;Martinez;1717;4379011;LP;profesor;DOCENTE
+37;Leonela Fatima;Rodriguez;Soria;1749;7000759;LP;profesor;DOCENTE
+38;Olivia;Huayta;Apaza;1765;6058401;LP;profesor;DOCENTE
+39;Lanny;Jimenez ;Terceros;1751;6865840;LP;profesor;DOCENTE
+40;Miriam;Mollinedo;Quispe;1773;;;;DOCENTE
+41;Janneth;Tito;Arteaga;1780;6033308;LP;profesor;DOCENTE
+42;Cristina;Sanchez ;Flores;1790;4293667;LP;profesor;DOCENTE
+43;Rosario;Carvajal;Zelada;1784;2219118;LP;profesor;DOCENTE
+44;Rolando;Mamani;;1789;4257414;LP;profesor;DOCENTE
+45;Javier ;Callisaya;;1791;3316688;LP;profesor;DOCENTE
+46;Betty;Flores;Canaviri;1807;4919691;LP;profesor;DOCENTE
+47;Lilian;Astro;Garron;1805;4311768;LP;profesor;DOCENTE
+48;Jorge;Heredia;Inturias;1788;4851383;LP;profesor;DOCENTE
+49;Mario;Vela;Cuellar;1803;6037134;LP;profesor;DOCENTE
+50;Sonia;Calcina;Mamani;1795;4927121;LP;profesor;DOCENTE
+51;David;Rodriguez;Guarachi;1776;;;;DOCENTE
+52;Marleny;Flores;Condori;1793;4901784;LP;profesor;DOCENTE
+53;Adelio;Mamani;Mamani;1785;5977420;LP;profesor;DOCENTE
+54;Rodolfo;Cayllagua;Ticona;1787;4892821;LP;profesor;DOCENTE
+55;Ruben ;Roque;Quispe;1802;3407957;LP;profesor;DOCENTE
+56;Iveth;Iriarte;Carvajal;1806;4263219;LP;profesor;DOCENTE
+57;Teresa;Quispe;Rivera;1781;3458869;LP;profesor;DOCENTE
+58;Noemi;Tancara;Quintanilla;1794;4924075;LP;profesor;DOCENTE
+59;Sixto;Chuquimia;Alcon;1792;2452855;LP;profesor;DOCENTE
+60;Julia;Layme;Mamani;1804;6009352;LP;profesor;DOCENTE
+61;Gladys;Choque;Ronquillo;1775;;;;DOCENTE
+62;Teresa;Paz;Flores;1786;2469262;LP;profesor;DOCENTE
+63;Felix;Huanca;Choque;1777;4762194;LP;profesor;DOCENTE
+64;Mario;Cruz;Q.;1778;3307590;LP;administrativo;DIRECTOR
+65;Olivia Roxana;Apaza;H.;1765;6058401;LP;administrativo;SECRETARIA
+66;Boris;Rivera;Carvajal;1782;4249599;LP;administrativo;ADMINISTRATIVO
+67;Aida Balila;Huaycho;Chura;1797;4745243;LP;;
+68;Felix;Quispe;Mamani;1768;;;;
+69;Miguel;Osco;Quispe;1729;;;;
+70;Ariel;Huchani;Fuentes;1728;;;;
+71;Wilson J.;Roque;Vargas;1733;;;;
+72;Edwin;Fernandez;Aquino;1727;;;;
+73;Acho;Oswaldo;Mamani;1730;;;;

@@ -319,11 +319,11 @@
   <div class="main container clearfix">
     <!-- <h1>Getting started</h1>
     <p>Don't worry, we've got your back.</p> -->
-    <form action="persona/subir" method="post" enctype="multipart/form-data">
-
-        <input type="number" name="id" />
-      <label>Please upload your avatar:</label>
-      <input type="file" name="avatar" />
+    <form action="administrador/cargarFotos" method="post" enctype="multipart/form-data" >
+      <!--<input type="number" name="id" />-->
+      
+      <label>Porfavor suba your avatar:</label>
+      <input type="file" name="avatar" multiple>
       <br/>
       <br/>
       <input type="submit" />

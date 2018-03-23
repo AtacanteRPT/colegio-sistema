@@ -1,0 +1,169 @@
+﻿nro;nombre;paterno;materno;codigoFoto;cedula;expedido;rol;Titulo;cargo;sexo
+1;Monica Isabel ;Sanchez ;Jimenez;1744;12573179;LP;administrativo;;;
+2;Monica Galdys ;Jimenez ;Luza ;1743;;;administrativo;;;
+3;Ruben German ;Sanchez ;Andrade ;1724;;;administrativo;;;
+4;Freddy Osmar ;Tuco;Alcon;1650;;;administrativo;;;
+5;Maria Eugenia ;Alcon ;Tarqui;1651;;;administrativo;;;
+6;Mabel Rozana ;Alcon ;Tarqui;1652;;;administrativo;;;
+7;Ana Maria;Tuco;Alcon;1653;;;administrativo;;;
+8;Adriana Carol;Cruz;Calle;1654;9995087;LP;administrativo;;;
+9;Silvia;Rios ;Vaquero;1656;9869546;LP;administrativo;;;
+10;Rossana ;Salamanca;;;;;administrativo;;;
+11;Yoseth;Alvarez;Cuevas;1660;6002672;LP;administrativo;;;
+12;Jose;Alvarez;Cuevas;1661;6025021;LP;administrativo;;;
+13;Laura;Laime;Cuevas;1662;6808531;LP;administrativo;;;
+14;Vania;Ticona;Mollericona;1663;9210085;LP;administrativo;;;
+15;Mariela;Salguero;Mamani;1664;14155560;LP;administrativo;;;
+16;Brenda Vanesa;Flores;Flores;1665;;;administrativo;;;
+17;Teresa;Rodrigues;;1666;251842;LP;administrativo;;;
+18;Alejandra Carol;Calle;;1667;4366139;LP;administrativo;;;
+19;Dayana Iveth ;Flores;Flores;;;;administrativo;;;
+20;Lidia;Flores;Chavez;1675;4957975;LP;administrativo;;;
+21;Lydia Juana;Quisbert;Ugarte;1685;3398261;LP;profesor;DOCENTE;;
+22;Jenny Veronica;Quispe;Hidalgo;1686;4838980;LP;profesor;DOCENTE;;
+23;Maria Isabel;Argollo;Chambi;1687;2690134;LP;profesor;DOCENTE;;
+24;Olga Catalina;Condori;Gutierrez;1688;4269576;LP;profesor;DOCENTE;;
+25;Karla Tatiana;Tejada ;Camacho;1689;4815041;LP;profesor;DOCENTE;;
+26;Adriana del Rosario;Condarza;Munguia;1690;8315112;LP;profesor;DOCENTE;;
+27;Lidia Justina;Huayhua;Ari;1692;3465221;LP;profesor;;;
+28;Jhonny ;Alejo;Huanca;1696;6186025;LP;administrativo;;;
+29;Maritza;Martinez;Tarqui;1700;4262240;LP;profesor;DOCENTE;;
+30;Gabriela Libertad;Gomez;Pozo;1702;8340355;LP;profesor;DOCENTE;;
+31;Rebeca Ninosca;Cruz;Apaza;1705;7046293;LP;profesor;DOCENTE;;
+32;Nair Rosa;Ortiz;Portocarrero;1716;4893610;LP;profesor;DOCENTE;;
+33;Ninosca ;Condori;Martinez;1717;4379011;LP;profesor;DOCENTE;;
+34;Leonela Fatima;Rodriguez;Soria;1749;7000759;LP;profesor;DOCENTE;;
+35;Lanny;Jimenez ;Terceros;1751;6865840;LP;profesor;DOCENTE;;
+36;Miriam;Mollinedo;Quispe;1773;;;profesor;DOCENTE;;
+37;Janneth;Tito;Arteaga;1780;6033308;LP;profesor;DOCENTE;;
+38;Cristina;Sanchez ;Flores;1790;4293667;LP;profesor;DOCENTE;;
+39;Rosario;Carvajal;Zelada;1784;2219118;LP;profesor;DOCENTE;;
+40;Rolando;Mamani;;1789;4257414;LP;profesor;DOCENTE;;
+41;Javier ;Callisaya;;1791;3316688;LP;profesor;DOCENTE;;
+42;Betty;Flores;Canaviri;1807;4919691;LP;profesor;DOCENTE;;
+43;Lilian;Astro;Garron;1805;4311768;LP;profesor;DOCENTE;;
+44;Jorge;Heredia;Inturias;1788;4851383;LP;profesor;DOCENTE;;
+45;Mario;Vela;Cuellar;1803;6037134;LP;profesor;DOCENTE;;
+46;Sonia;Calcina;Mamani;1795;4927121;LP;profesor;DOCENTE;;
+47;David;Rodriguez;Guarachi;1776;;;profesor;DOCENTE;;
+48;Marleny;Flores;Condori;1793;4901784;LP;profesor;DOCENTE;;
+49;Adelio;Mamani;Mamani;1785;5977420;LP;profesor;DOCENTE;;
+50;Rodolfo;Cayllagua;Ticona;1787;4892821;LP;profesor;DOCENTE;;
+51;Ruben ;Roque;Quispe;1802;3407957;LP;profesor;DOCENTE;;
+52;Iveth;Iriarte;Carvajal;1806;4263219;LP;profesor;DOCENTE;;
+53;Teresa;Quispe;Rivera;1781;3458869;LP;profesor;DOCENTE;;
+54;Noemi;Tancara;Quintanilla;1794;4924075;LP;profesor;DOCENTE;;
+55;Sixto;Chuquimia;Alcon;1792;2452855;LP;profesor;DOCENTE;;
+56;Julia;Layme;Mamani;1804;6009352;LP;profesor;DOCENTE;;
+57;Gladys;Choque;Ronquillo;1775;;;profesor;DOCENTE;;
+58;Teresa;Paz;Flores;1786;2469262;LP;profesor;DOCENTE;;
+59;Felix;Huanca;Choque;1777;4762194;LP;profesor;DOCENTE;;
+60;Mario;Cruz;Q.;1778;3307590;LP;administrativo;DIRECTOR;;
+61;Olivia Roxana;Apaza;Huayta;1765;6058401;LP;administrativo;SECRETARIA;;
+62;Boris;Rivera;Carvajal;1782;4249599;LP;administrativo;ADMINISTRATIVO;;
+63;Aida Balila;Huaycho;Chura;1797;4745243;LP;administrativo;;;
+64;Felix;Quispe;Mamani;1768;;;administrativo;;;
+65;Miguel;Osco;Quispe;1729;;;administrativo;;;
+66;Ariel;Huchani;Fuentes;1728;;;administrativo;;;
+67;Wilson J.;Roque;Vargas;1733;;;administrativo;;;
+68;Edwin;Fernandez;Aquino;1727;;;administrativo;;;
+69;Acho;Oswaldo;Mamani;1730;;;administrativo;;;
+70;Victor Boris;Gomez;Mejia;1745;3723384;Cbb;administrativo;Cnl.DAEN.;DIRECTOR GENERAL DE LA UEFAB;M
+71;Ruben Julio;Chura;Aruquipa;1772;3496363;LP;administrativo;Sof.1ro.DESA;DIRECTOR ADMINISTRATIVO;M
+72;Ronald;Choque;Angulo;1757;4825422;LP;administrativo;Sof.2do.DESA;DIRECTOR FINANCIERO;M
+73;Maria Eugenia;Yujra;Pinto;1737;6052537;LP;administrativo;Sgto.1ro.Tec.;ENC. DE LA SECCION  INFRAESTRUCTURA;F
+74;Rocio;Salvador;Cama;1740;5607281;BN.;administrativo;Sgto.1ro.Tec.;ENC. DE LA SECCION  CAJA;F
+75;Paola Marisol;Quispe;Flores;1771;6074535;LP;administrativo;Sgto.1ro.Tec.;ENC. DE LA SECCION INTELIGENCIA;F
+76;Miriam;Condori;Quispe;1770;6192374;LP;administrativo;Sgto.1ro.Tec.;ENC. DE LA SECCION ACTIVOS FIJOS;F
+77;Rocio;Tinta;Tarqui;1762;6765545;LP;administrativo;Sgto.1ro.Tec.;AYUDANTE GENERAL ;F
+78;Zulma Flori;Balboa;Balboa;1760;6792142;LP;administrativo;Sgto.1ro.Tec.;ENC. DE LA SECCION ALMACEN;F
+79;Vladimir;Troche;Aruquipa;1774;4888053;LP;administrativo;Sgto.1ro.Mus.;ENC. DE LA BANDA DE MUSICA;M
+80;Maria Julieta;Gonzales;Martines;1767;4266994;LP;administrativo;Tec.III;SECRETARIA GENERAL;F
+81;Silvia;Quispe;Mamani;1710;9212893;LP;administrativo;Tec.V;AUX DE OFICINA;F
+82;Gerardo;Zamorano;Tapia;1759;4295875;LP;administrativo;Adm.IV;PSICOLOGO ;M
+83;Paola;Apaza;Quispe;1756;3410316;LP;administrativo;Lic.;ENC. DE LA SECCION PRESUPUESTOS;F
+84;Oscar;Cabrera;Segales;1755;6054199;LP;administrativo;Lic.;ENC. DE LA SECCION CONTABILIDAD;M
+85;Cintia;Melendrez;Alaro;1779;9089884;LP;administrativo;Lic.;ENC. DE LA SECCION SISTEMAS;F
+86;Magdalena;Callisaya;Cruz;;4962428;L.P.;administrativo;Sra;SECRETARIA DE NIVEL SECUNDARIA;F
+87;Jovita;Quispe;Quispe;1694;6045239;LP;administrativo;Srta;AUX DE OFICINA;F
+88;Dora;Quispe;Huanca;1695;5980051;LP;administrativo;Srta;SECRETARIA DE NIVEL PRIMARIO;F
+89;Mirna;Estrada;Bruno;1769;4295534;LP;administrativo;Sra.;REGENTE;F
+90;Wilmar;Unzueta;;1630;4326153;L.P.;administrativo;Sr.;REGENTE;M
+91;Ruth;Heredia;;1620;5247846;CBBA.;administrativo;Sra.;REGENTE;F
+92;Raul;Monasterios;;1602;9961093;LP;administrativo;Sr.;REGENTE;M
+93;Leonardo;Quispe;Persona;1796;2433138;LP;administrativo;Sr;PORTERO;M
+94;Roberto;Yana;Maquera;1799;4256912;LP;administrativo;Sr;PORTERO;M
+95;Ascencio;Quispe;Perez;1798;6867136;LP;administrativo;Sr;PORTERO;M
+96;Ramos;Choque;Adela;1726;4778971;L.P.;profesor;;;F
+97;Peñaranda;Gomez;Anavela Susana;1732;3365102;L.P.;profesor;;;F
+98;Bautista;Alanoca;Noemi ;1698;4951306;L.P.;profesor;;;F
+99;Alvarez;Arzabe;Sandra Maribel;1738;5988784;L.P.;profesor;;;F
+100;Chico;Condori;Virginia ;;4778985;L.P.;profesor;;;F
+101;Coria;Aranda;Jhenny ;1697;4285590;L.P.;profesor;;;F
+102;Paredes;Usnayo;Arminda ;1711;3334270;L.P.;profesor;;;F
+103;Mollinedo;Quispe;Miriam Ruth;1735;2547933;L.P.;profesor;;;F
+104;Mejia;Tejada;Jesus Fausto;1709;2394543;L.P.;profesor;;;M
+105;Huanca;Paco;Vitalia ;1703;4975670;L.P.;profesor;;;F
+106;Gomez;Rocha;Wendy Jaclin;1706;6001368;L.P.;profesor;;;F
+107;Sanchez;Vega;Elizabeth ;1707;2366534;L.P.;profesor;;;F
+108;Condori;Ticonipa;Wilson ;1712;4329835;L.P.;profesor;;;M
+109;Alba;Velasco;Emma Gladys;1673;4283766;L.P.;profesor;;;F
+110;Flores;Escobar;Patricia Isabel;1708;4950275;L.P.;profesor;;;F
+111;Zarate;Ayllon;Roxana Lourdes;1713;4740965;L.P.;profesor;;;F
+112;Macuchapi;Mita;Juan Carlos;1674;4949226;L.P.;profesor;;;M
+113;Balboa;Callejas;Ivan Elvis;1649;3474989;L.P.;profesor;;;M
+114;Colque;Mamani;Julio Cesar;1659;3410629;L.P.;profesor;;;M
+115;Alcon;Quelca;Mirtha Celia;1704;4777631;L.P.;profesor;;;F
+116;Flores;Alfaro;Leticia ;1648;2658586;L.P.;profesor;;;F
+117;Soliz;Gonzales;Marco Antonio;1669;4921571;L.P.;profesor;;;M
+118;Mamani;Fabian;Felix ;1747;3332272;L.P.;profesor;;;M
+119;Barrientos;Valdez;Ramiro Eduardo;1658;3078312;O.R.;profesor;;;M
+120;Romero;Mamani;Jorge ;1683;1318447;P.T.;profesor;;;M
+121;Tonconi;Maydana;Gustavo Miguel;1672;4749591;L.P.;profesor;;;M
+122;Tambo;Mamani;Cecilia ;1676;4301438;L.P.;profesor;;;F
+123;Castañeta;Chambilla;Alex Davis;1741;6154402;L.P.;profesor;;;M
+124;Renjel;Mollo;Jilka ;1714;3109850;O.R.;profesor;;;F
+125;Maydana;Acarapi;Lizzeth Reina;;6003270;L.P.;profesor;;;F
+126;Troche;Benavidez;Roberto ;;3422802;L.P.;profesor;;;M
+127;Medrano;Mamani;Edwin ;1628;4841218;L.P.;profesor;;;M
+128;Moscoso;Cajas; Alfredo;1677;2531369;LP.;profesor;;;M
+129;Sergio;Vargas;Condori;1625;6147125;L.P.;profesor;;;M
+130;Jose Alejandro;Romero;Flores;1715;2235479;L.P.;profesor;;;M
+131;Reinaldo René;Pairumani;Pérez;1639;2377690;L.P.;profesor;;;M
+132;Iver German;Surco;Calle;1671;4895755;L.P.;profesor;;;M
+133;Luis Ricardo;Jerez;Herrera;1641;2462751;L.P.;profesor;;;M
+134;Nestor Jorge;Chipana;Mamani;1605;4282595;L.P.;profesor;;;M
+135;JustoVictor;Calle;Calle;;4243278;L.P.;profesor;;;M
+136;Noemi;Fernandez;Vallejos;1642;6748415;L.P.;profesor;;;F
+137;Willma;Condori;Chuca;1610;4881902;L.P.;profesor;;;M
+138;Miguel Oscar;Villa;Andrade;1657;2644910;L.P.;profesor;;;M
+139;Heidi;Alejo;Quisbert;1682;7010032;L.P.;profesor;;;F
+140;Alicia Celestina;Palacios;Morales;1607;2645043;L.P.;profesor;;;F
+141;Esteban;Gutierrez;Huañapaco;1679;3480949;L.P.;profesor;;;M
+142;Francisco;Choque;Ilaya;1615;4946165;L.P.;profesor;;;M
+143;Miguel Ángel;Chui;Merlo;1632;4800055;L.P.;profesor;;;M
+144;Ruben Julio;Calderon;Condori;1624;4267423;L.P.;profesor;;;M
+145;Fabiola;Quisbert;Cahuaya;1612;8301668;L.P.;profesor;;;F
+146;Luis Victor;Cameo;Borda;1604;440657;L.P.;profesor;;;M
+147;José Luís;Nina;Cruz;1614;4841620;L.P.;profesor;;;M
+148;Walter;Miranda;Vargas;1617;2248726;L.P.;profesor;;;M
+149;Fernando;Gonzales;Jiménez;1608;4928657;L.P.;profesor;;;M
+150;Franz Felipe;Chino;Condori;1611;4252404;L.P.;profesor;;;M
+151;Milton Manuel;Choque;Callata;1616;5475771;L.P.;profesor;;;M
+152;Roxana;Callisaya;Bautista;1635;4882868;L.P.;profesor;;;F
+153;Amalia Ana;Nacho;Hinojoza;1603;3395238;L.P.;profesor;;;F
+154;Jaime Raul;Miranda;Quisbert;1609;3403084;L.P.;profesor;;;M
+155;Luís Marcos;Terán;Morales;1742;6727303;L.P.;profesor;;;M
+156;Adelaida;Maydana;Acarapi;1645;6043628;L.P;profesor;;;F
+157;Edwin Moises;Quinta;Cutter;1637;4771845;L.P.;profesor;;;M
+158;Ruiter;Ramos;Quispe;1670;493743;L.P.;profesor;;;M
+159;Julio Ignacio;Bautista;Lopez;1622;3364106;L.P.;profesor;;;M
+160;Javier;Paco;Coila;1621;3374945;L.P.;profesor;;;M
+161;Ricardo;Ramirez;Manuel;1626;2780301;L.P.;profesor;;;M
+162;Esteban Edgar;Toledo;Jimenez;1629;2691436;L.P.;profesor;;;M
+163;Edwin;Quispe;Quispe;1619;4369909;L.P.;profesor;;;M
+164;Zenón Guillermo;Ríos;Rojas;1618;3345099;L.P.;profesor;;;M
+165;Miriam;Cortez;Miranda;1644;2521749;L.P.;profesor;;;F
+166;Lucio;Guachalla;Chuquimia;1627;2359200;L.P.;profesor;;;M
+167;Wilmer Javier;López;Lizarazu;1678;4365506;L.P.;profesor;;;M
+168;Feliciano;Galarza;Guzman;1699;2441597;L.P.;profesor;;;M

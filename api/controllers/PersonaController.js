@@ -52,10 +52,10 @@ module.exports = {
             cedula: req.param('cedula'),
             expedido: req.param('expedido'),
             sexo: req.param('sexo'),
-            rol:req.param('rol')
+            rol: req.param('rol')
         }
 
-       var rol = req.param('rol');
+        var rol = req.param('rol');
         Persona.create(nuevaPersona).exec(function (err, datoPersona) {
             if (err) { return res.serverError(err) };
 
@@ -72,7 +72,7 @@ module.exports = {
                     Tutor.create({ id: 0, idPersona: datoPersona.id }).exec(function (err, creado) { if (err) { return res.serverError(err); } })
                     break;
                 case 'administrativo':
-                    Administrador.create({ id: 0, idPersona: datoPersona.id, cargo: req.param('cargo')}).exec(function (err, creado) { if (err) { return res.serverError(err); } })
+                    Administrador.create({ id: 0, idPersona: datoPersona.id, cargo: req.param('cargo') }).exec(function (err, creado) { if (err) { return res.serverError(err); } })
                     break;
                 default:
                     break;
@@ -83,7 +83,7 @@ module.exports = {
                     id: 0,
                     username: datoPersona.id + datoPersona.nombre,
                     password: datoPersona.id + datoPersona.nombre,
-                    codigo_qr: datoPersona.nombre+" "+datoPersona.paterno+" "+datoPersona.materno,
+                    codigo_qr: datoPersona.nombre + " " + datoPersona.paterno + " " + datoPersona.materno,
                     rol: rol,
                     idPersona: datoPersona.id
                 }
@@ -138,12 +138,12 @@ module.exports = {
 
             console.log(sails.config.appUrl)
 
-             var direccionBase = "http://localhost:1337"
+            var direccionBase = "http://localhost:1337"
             // var direccionBase = "http://192.241.152.146:1337"
-            var url= direccionBase +"/avatars//"+ (uploadedFiles[0].fd).substring(47);
+            var url = direccionBase + "/avatars//" + (uploadedFiles[0].fd).substring(47);
             Persona.update({ id: idPersona }, {
                 img: url,
-            }).exec(function (err,datoPersona) {
+            }).exec(function (err, datoPersona) {
 
                 if (err) { console.log(err); return res.negotiate(err) };
 
@@ -152,7 +152,7 @@ module.exports = {
 
         });
 
-    },
+    }
 
 };
 

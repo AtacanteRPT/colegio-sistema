@@ -2,7 +2,7 @@
 var SerialPort = require('serialport');
 var rest = require('restler');
 var moment = require('moment')
-var baseidentificacion = '0'
+var baseidentificacion = ''
 var actualIdentificacion = '0'
 
 var async = require('async');
@@ -30,7 +30,7 @@ console.log('Server Sockets: el puerto 1338');
 
 // var io = socketIo.listen(sails.hooks.http.server);
 
-var port = new SerialPort('COM10', {
+var port = new SerialPort('COM9', {
   baudRate: 57600
 });
 
@@ -51,38 +51,39 @@ io.on('connection', function (socket) {
 
     var hoy = new Date()
     // console.log(data.toString())
-    if (data.toString().length < 9) {
-      var auxBase = data.toString();
-      for (var i = 0; i < 10; i++) {
-        if (auxBase.charAt(i) != '$') {
-            baseidentificacion = auxBase;
-            i= 20;
-        }
-
+baseidentificacion='';
+    var auxBase = data.toString();
+    for (var i = 0; i < 10; i++) {
+      if (auxBase.charAt(i) != '$') {
+        baseidentificacion = baseidentificacion + auxBase.charAt(i) + "";
+      } else {
+        i = 20;
       }
 
-      async.series([
-        marcarAsistencia,
-        sincrono
-      ], function (err, resultado) {
-        // Here, results is an array of the value from each function
-        console.log('results', resultado)
-
-        sails.log('A')
-        console.log('baseindentificacion', + baseidentificacion);
-        var datoAsistencia = resultado[0]
-        sails.log('B')
-        // socket.on('message', function (datoCliente) {
-
-        //   console.log('socket juanito : ', datoCliente)
-        // })
-        socket.emit('message', datoAsistencia);
-
-        // console.log('auxALumno:', datoAsistencia)
-
-      });
-
     }
+
+    sails.log("AUXBASE :::", baseidentificacion);
+
+    async.series([
+      marcarAsistencia,
+      sincrono
+    ], function (err, resultado) {
+      // Here, results is an array of the value from each function
+      console.log('results', resultado)
+
+      sails.log('A')
+      console.log('baseindentificacion', + baseidentificacion);
+      var datoAsistencia = resultado[0]
+      sails.log('B')
+      // socket.on('message', function (datoCliente) {
+
+      //   console.log('socket juanito : ', datoCliente)
+      // })
+      socket.emit('message', datoAsistencia);
+
+      // console.log('auxALumno:', datoAsistencia)
+
+    });
 
   });
 });
@@ -113,6 +114,15 @@ function marcarAsistencia(callback) {
     // console.log('paso 1', actualIdentificacion)
 
     Persona.findOne({ identificacion: baseidentificacion }).exec((err, datoPersona) => {
+      if (datoPersona == undefined) {
+        auxAlumno.nombre = 'NO'
+        auxAlumno.paterno = 'ENCONTRADO NINGUN'
+        auxAlumno.materno = 'USUARIO CON ESTE CODIGO, registre porfavor'
+
+        baseidentificacion='';
+        callback(null, auxAlumno);
+        return auxAlumno;
+      }
 
       // console.log('paso nueevo', baseidentificacion)
       var query = "SELECT p.nombre as paralelo, t.nombre as turno, g.nombre as grupo, tmpCurso.nombre , tmpCurso.paterno ,tmpCurso.materno,tmpCurso.img, tmpCurso.id as idAlumno ,tmpCurso.idCurso, tmpCurso.idPersona from paralelo p, turno t, grupo g , (SELECT c.idParalelo, c.idTurno,c.idGrupo, tmpInscribe.nombre, tmpInscribe.img, tmpInscribe.paterno,tmpInscribe.materno, tmpInscribe.idPersona, tmpInscribe.id, tmpInscribe.idCurso from curso c , (SELECT i.idCurso, tmpAlumno.nombre, tmpAlumno.paterno,tmpAlumno.materno, tmpAlumno.img, tmpAlumno.id, tmpAlumno.idPersona from inscribe i , (select p.nombre , p.paterno, p.materno , p.img, p.id as idPersona, a.id from persona p, alumno a where p.identificacion = ? and p.id = a.idPersona) tmpAlumno where i.idAlumno = tmpAlumno.id) tmpInscribe where c.id = tmpInscribe.idCurso)tmpCurso WHERE p.id = tmpCurso.idParalelo and t.id = tmpCurso.idTurno and g.id = tmpCurso.idGrupo"
@@ -124,7 +134,7 @@ function marcarAsistencia(callback) {
 
         console.log('paso nueevo', baseidentificacion)
         console.log('tamaño console length', consulta.length)
-        if (consulta.length == 1) {
+        if (consulta.length > 0) {
           resultado = consulta[0]
         } else {
 

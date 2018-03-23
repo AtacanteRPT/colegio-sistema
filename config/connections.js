@@ -47,14 +47,20 @@ module.exports.connections = {
   //   password: '123456', //optional
   //   database: 'colegio-development-10' //optional
   // },
-    someMysqlServer: {
+  // someMysqlServer: {
+  //   adapter: 'sails-mysql',
+  //   host: 'localhost',
+  //   user: 'root', //optional
+  //   password: '', //optional
+  //   database: 'colegio-development-10' //optional
+  // },
+  someMysqlServer: {
     adapter: 'sails-mysql',
     host: 'localhost',
     user: 'root', //optional
     password: '', //optional
-    database: 'colegio-development-10' //optional
+    database: 'colegio-production-1' //optional
   },
-
   /***************************************************************************
   *                                                                          *
   * MongoDB is the leading NoSQL database.                                   *
