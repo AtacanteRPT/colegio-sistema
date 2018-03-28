@@ -152,15 +152,14 @@ module.exports = {
 
         });
 
-    },
+    }
+    ,
     informacion: function (req, res) {
-
         var codigoqr = req.param('codigoqr');
         var identificacion = codigoqr.split("$");
         console.log("idntificacion",identificacion[0])
         Persona.findOne({ identificacion: identificacion[0]}).exec(function (err, datoPersona) {
             if (err) { return res.serverError(err); }
-
             res.send(datoPersona);
         });
     }
