@@ -19,6 +19,12 @@ module.exports = {
       size: 50,
       defaultsTo: null
     },
+    observacion: {
+      type: 'string',
+      required: false,
+      size: 50,
+      defaultsTo: null
+    },
     hora_llegada: {
       type: 'string',
       size: 50,

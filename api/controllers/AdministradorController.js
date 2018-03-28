@@ -65,7 +65,7 @@ module.exports = {
         //     res.send('NADA 2')
         // }); 
 
-        var csvFilePath = '../.././assets/cvs/personalFab.csv'
+        var csvFilePath = '../.././assets/cvs/prekinder_amerinst.csv'
 
         var nuevasPersonas = [];
         var data = fs.readFileSync(path.join(__dirname, csvFilePath), { encoding: 'utf8' });
@@ -79,19 +79,27 @@ module.exports = {
         var contador = 1;
         nuevasPersonas.forEach(function (persona) {
 
-            if (persona.cedula.length > 0) {
-                persona.identificacion = persona.cedula
-            } else {
+            if (persona.codigoFoto.length > 1) {
                 persona.identificacion = persona.codigoFoto
+                // var codigoQr = persona.identificacion + '$2018@' + ' Unidad Educativa TCNL.RAFAEL PABON FAB'
+                var codigoQr = persona.identificacion + '$2018$' + 'Instituto Americano'
+                var code = qr.image(codigoQr, { type: 'svg' });
+                var output = fs.createWriteStream(path.join(__dirname, '../.././assets/codigos/' + persona.nro + '.svg'))
+                console.log("contador : " + contador)
+                contador++;
+                code.pipe(output);
+            } else {
+                // persona.identificacion = persona.codigoFoto
 
             }
 
-            var codigoQr = persona.identificacion + '$2018@' + ' Unidad Educativa TCNL.RAFAEL PABON FAB'
-            var code = qr.image(codigoQr, { type: 'svg' });
-            var output = fs.createWriteStream(path.join(__dirname, '../.././assets/codigos/' + persona.nro + '.svg'))
-            console.log("contador : " + contador)
-            contador++;
-            code.pipe(output);
+            // // var codigoQr = persona.identificacion + '$2018@' + ' Unidad Educativa TCNL.RAFAEL PABON FAB'
+            // var codigoQr = persona.identificacion + '$2018$' + 'Instituto Americano'
+            // var code = qr.image(codigoQr, { type: 'svg' });
+            // var output = fs.createWriteStream(path.join(__dirname, '../.././assets/codigos/' + persona.nro + '.svg'))
+            // console.log("contador : " + contador)
+            // contador++;
+            // code.pipe(output);
 
         }, this);
 
