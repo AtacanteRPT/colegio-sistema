@@ -17,7 +17,7 @@ module.exports = {
 
             if (err) { return res.serverError(err); }
 
-            console.log("datoAlumno:" + datoAlumno);
+            console.log("datoAlumno:" , datoAlumno);
             Tutor_alumno.find({
                 where: { idAlumno: datoAlumno.id }
 

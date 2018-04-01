@@ -35,10 +35,13 @@ module.exports.policies = {
   ***************************************************************************/
   AsistenciaController:{
     historial:['AccesoPoliticaAlumno']
-  },
-  CursoController:{
-    create: 'esLaUnicaGrabacion'
   }
+
+  // ,
+  // CursoController:{
+  //   create: 'esLaUnicaGrabacion'
+  // }
+
 
 	// RabbitController: {
 
