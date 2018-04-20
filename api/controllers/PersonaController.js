@@ -52,7 +52,9 @@ module.exports = {
             cedula: req.param('cedula'),
             expedido: req.param('expedido'),
             sexo: req.param('sexo'),
-            rol: req.param('rol')
+            rol: req.param('rol'),
+            nro:req.param('nro'),
+            codigoFoto:req.param('codigoFoto')
         }
 
         var rol = req.param('rol');
@@ -60,7 +62,7 @@ module.exports = {
             if (err) { return res.serverError(err) };
 
             sails.log(datoPersona);
-            console.log('persons : ' + datoPersona.nombre)
+            // console.log('persons : ' + datoPersona.nombre)
             switch (rol) {
                 case 'alumno':
                     Alumno.create({ id: 0, idPersona: datoPersona.id }).exec(function (err, creado) { if (err) { return res.serverError(err); } })

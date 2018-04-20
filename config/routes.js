@@ -49,8 +49,11 @@ module.exports.routes = {
   'POST /alumno/adicionar_tutor/': 'ALumnoController.adicionar_tutor',
   'GET /alumno/tutores/:id': 'ALumnoController.alumno_tutor',
 
-  'GET /cargarFotos': {
+  'GET /menu/cargarFotos': {
     view: 'homepage' 
+  },
+  'GET /menu/asistenciaDia': {
+    view: 'asistenciaDia' 
   },
   // 'POST /inscribe/inscribir': 'InscribeController.inscribir',
 

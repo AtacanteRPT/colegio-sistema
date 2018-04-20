@@ -32,6 +32,17 @@ module.exports = {
       type: 'date',
       required: false,
       defaultsTo: null
-    }
+    },
+    horaEntrada: {
+      type: 'time',
+      required: false,
+      defaultsTo: null
+    },
+    horaSalida: {
+      type: 'time',
+      required: false,
+      defaultsTo: null
+    },
   }
+
 };

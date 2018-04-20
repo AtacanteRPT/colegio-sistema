@@ -40,8 +40,8 @@
 ################################################
 
 config/local.js
-api/controllers/AsistenciaController.js
-config/connections.js
+#api/controllers/AsistenciaController.js
+#config/connections.js
 
 
 
@@ -71,10 +71,15 @@ config/connections.js
 node_modules
 bower_components
 
-config/local.js
-api/controllers/PersonaController.js
-api/controllers/AsistenciaController.js
-config/connections.js
+assets/cvs
+assets/codigos
+assets/avatars
+assets/otros
+
+#config/local.js
+#api/controllers/PersonaController.js
+#api/controllers/AsistenciaController.js
+#config/connections.js
 
 
 

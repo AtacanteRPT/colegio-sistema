@@ -1,0 +1,286 @@
+<style>
+    table,
+    th,
+    td {
+        border: none;
+        font-family: "Courier New", Courier, monospace;
+    }
+    
+    thead {
+        border-bottom: 4px solid #333333;
+    }
+    
+    table {
+        width: 100%;
+        display: table;
+        border-collapse: collapse;
+        border-spacing: 0;
+    }
+    
+    table.striped tr {
+        border-bottom: none;
+    }
+    
+    table.striped>tbody>tr:nth-child(odd) {
+        background-color: rgba(242, 242, 242, 0.5);
+    }
+    
+    table.striped>tbody>tr>td {
+        border-radius: 0;
+    }
+    
+    table.highlight>tbody>tr {
+        -webkit-transition: background-color .25s ease;
+        transition: background-color .25s ease;
+    }
+    
+    table.highlight>tbody>tr:hover {
+        background-color: rgba(242, 242, 242, 0.5);
+    }
+    
+    table.centered thead tr th,
+    table.centered tbody tr td {
+        text-align: center;
+    }
+    
+    tr {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    }
+    
+    td,
+    th {
+        padding: 5px 5px;
+        display: table-cell;
+        text-align: left;
+        vertical-align: middle;
+        border-radius: 2px;
+    }
+    
+    h1 {
+        font-size: 4.2rem;
+        line-height: 110%;
+        margin: 2.8rem 0 1.68rem 0;
+    }
+    
+    h2 {
+        font-size: 3.56rem;
+        line-height: 110%;
+        margin: 2.3733333333rem 0 1.424rem 0;
+    }
+    
+    h3 {
+        font-size: 2.92rem;
+        line-height: 110%;
+        margin: 1.9466666667rem 0 1.168rem 0;
+    }
+    
+    h4 {
+        font-size: 2.28rem;
+        line-height: 110%;
+        margin: 1.52rem 0 0.912rem 0;
+    }
+    
+    h5 {
+        font-size: 1.64rem;
+        line-height: 110%;
+        margin: 1.0933333333rem 0 0.656rem 0;
+    }
+    
+    h6 {
+        font-size: 1.15rem;
+        line-height: 110%;
+        margin: 0.7666666667rem 0 0.46rem 0;
+    }
+    
+    p {
+        font-size: 1.15rem;
+        line-height: 110%;
+        margin: 0.7666666667rem 0 0.46rem 0;
+    }
+    
+    .card {
+        position: relative;
+        margin: 0.5rem 0 1rem 0;
+        background-color: #fff;
+        -webkit-transition: -webkit-box-shadow .25s;
+        transition: -webkit-box-shadow .25s;
+        transition: box-shadow .25s;
+        transition: box-shadow .25s, -webkit-box-shadow .25s;
+        border-radius: 2px;
+    }
+    
+    .card-panel {
+        -webkit-transition: -webkit-box-shadow .25s;
+        transition: -webkit-box-shadow .25s;
+        transition: box-shadow .25s;
+        transition: box-shadow .25s, -webkit-box-shadow .25s;
+        padding: 24px;
+        margin: 0.5rem 0 1rem 0;
+        border-radius: 2px;
+        background-color: #fff;
+    }
+    
+    .row .col {
+        float: left;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 0 0.75rem;
+        min-height: 1px;
+    }
+    
+    .row .col[class*="push-"],
+    .row .col[class*="pull-"] {
+        position: relative;
+    }
+    
+    .row .col.s1 {
+        width: 8.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s2 {
+        width: 16.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s3 {
+        width: 25%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s4 {
+        width: 33.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s5 {
+        width: 41.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s6 {
+        width: 50%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s7 {
+        width: 58.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s8 {
+        width: 66.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s9 {
+        width: 75%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s10 {
+        width: 83.3333333333%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s11 {
+        width: 91.6666666667%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .row .col.s12 {
+        width: 100%;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+    }
+    
+    .texto {
+        text-align: center
+    }
+</style>
+<div>
+    <div class="row">
+        <p class="texto col s4">
+            Fuerza Aerea Boliviana <br> UNIDAD EDUCATIVA F.A.B. <br> BOLIVIA
+        </p>
+        <p class="col s4">
+        </p>
+        <p class="col s4">
+            Fecha :
+            <%=asistencia[0].fecha %>
+        </p>
+    </div>
+
+    <div class="row">
+        <h5 class="texto col s12">
+            REPORTE DIARIO <br> PERSONAL ADMINISTRATIVO
+        </h5>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Cedula</th>
+                <th>Nombre</th>
+                <th>Paterno</th>
+                <th>Materno</th>
+                <th>Hora Llegada</th>
+                <th>Hora Salida</th>
+                <th>Observación</th>
+            </tr>
+        </thead>
+        <tbody>
+
+            <% for(var i=0; i< asistencia.length ; i++) {%>
+                <tr>
+                    <th>
+                        <%=asistencia[i].idPersona.cedula %>
+                    </th>
+                    <th>
+                        <%=asistencia[i].idPersona.nombre %>
+                    </th>
+                    <th>
+                        <%=asistencia[i].idPersona.paterno %>
+                    </th>
+                    <th>
+                        <%=asistencia[i].idPersona.materno %>
+                    </th>
+                    <th>
+                        <%=asistencia[i].hora_llegada%>
+                    </th>
+                    <th>
+                        <%=asistencia[i].hora_salida %>
+                    </th>
+                    <th>
+                        <%=asistencia[i].observacion %>
+                    </th>
+                </tr>
+                <% } %>
+
+
+        </tbody>
+    </table>
+
+</div>

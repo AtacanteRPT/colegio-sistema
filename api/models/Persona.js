@@ -90,6 +90,16 @@ module.exports = {
       size: 20,
       defaultsTo: null
     },
+     nro: {
+      type: 'string',
+      required: false,
+      size: 20
+    },
+      codigoFoto: {
+      type: 'string',
+      required: false,
+      size: 50
+    },
      rol: {
       type: 'string',
       required: true,

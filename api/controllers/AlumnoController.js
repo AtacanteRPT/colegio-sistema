@@ -17,7 +17,7 @@ module.exports = {
 
             if (err) { return res.serverError(err); }
 
-            console.log("datoAlumno:" , datoAlumno);
+            console.log("datoAlumno:", datoAlumno);
             Tutor_alumno.find({
                 where: { idAlumno: datoAlumno.id }
 
@@ -46,6 +46,17 @@ module.exports = {
         });
 
     },
+
+    actualizar:function(req,res){
+
+        var id = req.param('id')
+
+        var identificacion = req.param('identificacion')
+        Persona.update(id).set({identificacion : identificacion}).exec(function(err,datoPersona){
+            sails.log('ACTUALIZADO : ',datoPersona)
+            res.send(datoPersona)
+        })
+    },
     adicionar_tutor: function (req, res) {
 
         Alumno.findOne({ idPersona: req.param('idAlumno') }).exec(function (err, datoAlumno) {
@@ -54,13 +65,18 @@ module.exports = {
             Tutor.findOne({ idPersona: req.param('idTutor') }).exec(function (err, datoTutor) {
                 if (err) { return res.serverError(err); }
 
-                Tutor_alumno.create({ id: 0, idAlumno: datoAlumno.id,idTutor:datoTutor.id }).exec(function (err, creado) {
-                    if (err) { return res.serverError(err); }
+                if (datoTutor) {
+                    sails.log("AlumnoController", datoTutor);
+                    Tutor_alumno.create({ id: 0, idAlumno: datoAlumno.id, idTutor: datoTutor.id }).exec(function (err, creado) {
+                        if (err) { return res.serverError(err); }
 
-                    console.log('******************************')
-                    return res.redirect('/alumno/tutores/'+req.param('idAlumno'));
+                        console.log('******************************')
+                        return res.redirect('/alumno/tutores/' + req.param('idAlumno'));
 
-                });
+                    });
+                }else{
+                    res.send('NO ADICIONADO')
+                }
 
             })
 
